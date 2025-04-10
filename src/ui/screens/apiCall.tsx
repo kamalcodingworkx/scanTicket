@@ -67,4 +67,14 @@ export async function scanVisitor({ type, barcode }: ScanPayload) {
         console.log("Scan Failed:", error.response?.data || error.message);
         throw error;
     }
+    // var xhr = new XMLHttpRequest();
+    // xhr.withCredentials = true;
+    // xhr.addEventListener("readystatechange", function () {
+    //     if (this.readyState === 4) {
+    //         console.log("response text of api", this.responseText);
+    //     }
+    // });
+    // xhr.open("POST", "https://naturetrail.mcgm.gov.in/api/visitor/scan/entry/12345");
+    // xhr.setRequestHeader("X-Scan-Key", "NT#scan$2024@mcgm#9x8p4k2m");
+    // xhr.send();
 }

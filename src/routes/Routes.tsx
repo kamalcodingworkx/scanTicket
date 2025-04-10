@@ -16,7 +16,7 @@ function RootStack() {
       <Stack.Screen name="Splash" component={Splash} />
 
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="ScanScreen" component={ScanScreen} />
+      <Stack.Screen name="ScanScreen" component={ScanScreen} options={{ unmountOnBlur: true }} />
 
     </Stack.Navigator>
   );
